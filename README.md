@@ -1,1 +1,0 @@
-omni_twrp_device
