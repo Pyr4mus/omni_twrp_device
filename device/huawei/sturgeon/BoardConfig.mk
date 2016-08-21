@@ -49,14 +49,15 @@ BOARD_HAS_NO_REAL_SDCARD := true
 PRODUCT_COPY_FILES += device/huawei/sturgeon/fstab.sturgeon:root/fstab.sturgeon \
     device/huawei/sturgeon/init.recovery.sturgeon.rc:root/init.recovery.sturgeon.rc
     
-TARGET_RECOVERY_INITRC = device/huawei/sturgeon/init.rc
+#TARGET_RECOVERY_INITRC = device/huawei/sturgeon/init.rc
 
 TARGET_RECOVERY_FSTAB = device/huawei/sturgeon/twrp.fstab
 
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 RECOVERY_SDCARD_ON_DATA := true
-RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
+#RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
+RECOVERY_GRAPHICS_FORCE_USE_LINELENGTH := true
 
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
@@ -65,6 +66,7 @@ TARGET_USES_LOGD := true
 
 # TWRP
 TWRP_INCLUDE_LOGCAT := true
+TW_USE_NEW_MINADBD := true
 TW_NEW_ION_HEAP := true
 TW_TARGET_USES_QCOM_BSP := true
 TW_CUSTOM_THEME := device/huawei/sturgeon/watch_mdpi
