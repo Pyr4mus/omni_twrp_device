@@ -10,8 +10,6 @@ CONFIG="omni_sturgeon-eng"
 COMPILE="recoveryimage" # [aroma_installer,recoveryimage]
 
 export USE_CCACHE=1
-export PATH=$PARENT/ccache:$PARENT/toolchains/ubertc-4.9.4/bin:$PATH
-export CROSS_COMPILE=arm-eabi-
 
 echo " "
 echo "**************************************************************"

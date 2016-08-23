@@ -2,10 +2,10 @@
 <recovery>
 	<details>
 		<resolution width="320" height="320"/>
-		<roundscreen offset_x="0" offset_y="40"/>
-		<author>TeamWin</author>
+		<roundscreen offset_x="0" offset_y="60"/>
+		<author>Negamann303/TeamWin</author>
 		<title>Backup Naowz</title>
-		<description>Default basic theme</description>
+		<description>Negalite Huawei</description>
 		<preview>preview.png</preview>
 		<themeversion>1</themeversion>
 	</details>
@@ -232,7 +232,7 @@
 					<condition var1="tw_battery" op="&lt;" var2="101"/>
 				</conditions>
 				<font resource="font_m"/>
-				<placement x="270" y="%row1_header_y%" placement="1"/>
+				<placement x="260" y="%row1_header_y%" placement="1"/>
 				<text>{@battery_pct=Battery: %tw_battery%}</text>
 			</text>
 
