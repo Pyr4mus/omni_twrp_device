@@ -25,7 +25,7 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := sturgeon
 
-BOARD_KERNEL_CMDLINE := androidboot.hardware=sturgeon user_debug=31 maxcpus=4 msm_rtb.filter=0x3F console=null pm_levels.sleep_disabled=1  androidboot.console=null
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive androidboot.hardware=sturgeon user_debug=31 maxcpus=4 msm_rtb.filter=0x3F console=null pm_levels.sleep_disabled=1  androidboot.console=null
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 BOARD_KERNEL_BASE := 0x0000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -48,15 +48,14 @@ BOARD_HAS_NO_REAL_SDCARD := true
 
 PRODUCT_COPY_FILES += device/huawei/sturgeon/fstab.sturgeon:root/fstab.sturgeon \
     device/huawei/sturgeon/init.recovery.sturgeon.rc:root/init.recovery.sturgeon.rc
-    
-#TARGET_RECOVERY_INITRC = device/huawei/sturgeon/init.rc
 
-TARGET_RECOVERY_FSTAB = device/huawei/sturgeon/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/huawei/sturgeon/twrp.fstab
 
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+
 RECOVERY_SDCARD_ON_DATA := true
-#RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
 RECOVERY_GRAPHICS_FORCE_USE_LINELENGTH := true
 
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -72,7 +71,7 @@ TW_TARGET_USES_QCOM_BSP := true
 TW_CUSTOM_THEME := device/huawei/sturgeon/watch_mdpi
 TW_ROUND_SCREEN := true
 TW_NO_USB_STORAGE := true
+TW_INCLUDE_JPEG := true
 TW_INCLUDE_FB2PNG := true
-TW_INCLUDE_JB_CRYPTO := true
 TW_EXCLUDE_MTP := true
 TW_EXCLUDE_SUPERSU := true

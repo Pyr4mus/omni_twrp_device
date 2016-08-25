@@ -682,7 +682,7 @@
 			<template name="console"/>
 
 			<button style="main_button_half_height">
-				<placement x="%col1_x_left%" y="%row13_y%"/>
+				<placement x="%col1_x_left%" y="%row13a_y%"/>
 				<text>{@wipe_cache_dalvik_btn=Wipe cache/dalvik}</text>
 				<actions>
 					<action function="set">tw_back=flash_done</action>
@@ -700,7 +700,7 @@
 			</button>
 
 			<button style="main_button_half_height">
-				<placement x="%col1_x_right%" y="%row13_y%"/>
+				<placement x="%col1_x_right%" y="%row13a_y%"/>
 				<text>{@reboot_system_btn=Reboot System}</text>
 				<actions>
 					<action function="set">tw_back=main2</action>

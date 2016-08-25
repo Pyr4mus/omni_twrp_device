@@ -133,8 +133,8 @@
 		<variable name="row14a_y" value="244"/>
 		<variable name="row15_y" value="252"/>
 		<variable name="row15a_y" value="260"/>
-		<variable name="navbar_y" value="268"/>
-		<variable name="navbar_btn_y" value="294"/>
+		<variable name="navbar_y" value="272"/>
+		<variable name="navbar_btn_y" value="300"/>
 		<variable name="keyboard_y" value="124"/>
 		<variable name="keyboard_terminal_y" value="100"/>
 		<variable name="background_color" value="#1A1A1A"/>
@@ -174,7 +174,7 @@
 		<variable name="input_height" value="16"/>
 		<variable name="input_line_width" value="1"/>
 		<variable name="input_line_console" value="272"/>
-		<variable name="console_height" value="152"/>
+		<variable name="console_height" value="195"/>
 		<variable name="console_terminal_s_height" value="100"/>
 		<variable name="console_terminal_l_height" value="268"/>
 		<variable name="close_btn_x" value="280"/>
@@ -199,7 +199,7 @@
 		<template name="page">
 			<image>
 				<image resource="splashteamwin"/>
-				<placement x="160" y="-20" placement="4"/>
+				<placement x="160" y="-26" placement="4"/>
 			</image>
 			<background color="%background_color%"/>
 
@@ -274,13 +274,13 @@
 
 		<template name="progress_bar">
 			<progressbar>
-				<placement x="%indent%" y="%row11_y%"/>
+				<placement x="30" y="238"/>
 				<resource empty="progress_empty" full="progress_full"/>
 				<data name="ui_progress"/>
 			</progressbar>
 
 			<animation>
-				<placement x="%indent%" y="%row11_y%"/>
+				<placement x="30" y="238"/>
 				<resource name="progress"/>
 				<speed fps="24" render="2"/>
 				<loop frame="1"/>
@@ -296,8 +296,8 @@
 				<placement x="%indent%" y="row1_y" w="%content_width%" h="input_line_width" placement="1"/>
 			</fill>
 
-			<fill color="%fileselector_linecolor%">
-				<placement x="%indent%" y="row10a_y" w="%content_width%" h="input_line_width"/>
+			<fill color="%accent_color%">
+				<placement x="%indent%" y="228" w="%content_width%" h="input_line_width"/>
 			</fill>
 		</template>
 
