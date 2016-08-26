@@ -74,6 +74,7 @@
 		<image name="kb_arrow_up" filename="kb_arrow_up" retainaspect="1"/>
 		<image name="kb_arrow_down" filename="kb_arrow_down" retainaspect="1"/>
 		<image name="splashteamwin" filename="splashteamwin" retainaspect="1"/>
+		<animation name="installing" filename="installing"/>
 	</resources>
 
 	<variables>
@@ -283,6 +284,13 @@
 				<placement x="30" y="238"/>
 				<resource name="progress"/>
 				<speed fps="24" render="2"/>
+				<loop frame="1"/>
+			</animation>
+			
+			<animation>
+				<placement x="10" y="280"/>
+				<resource name="installing"/>
+				<speed fps="2" render="2"/>
 				<loop frame="1"/>
 			</animation>
 		</template>

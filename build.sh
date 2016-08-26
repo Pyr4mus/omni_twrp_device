@@ -97,15 +97,11 @@ function compile(){
 		make aroma_installer.zip
 		if [ -e $AROMA/aroma.zip ]; then
 			mv $AROMA/aroma.zip $COMPILED/aroma.zip
-			adb push $COMPILED/aroma.zip /sdcard/
-			adb reboot recovery
 		fi
 	fi
 	
 	if [ -e $OUT/recovery.img ]; then
 		mv $OUT/recovery.img $COMPILED/recovery.img
-		adb reboot bootloader
-		sudo fastboot flash recovery $COMPILED/recovery.img
 	fi
 }
 
@@ -127,3 +123,13 @@ echo " "
 
 # Kill progress
 kill $! 1>&1
+
+if [ -e $COMPILED/aroma.zip ]; then
+	adb push $COMPILED/aroma.zip /sdcard/
+	adb reboot recovery
+fi
+
+if [ -e $COMPILED/recovery.img ]; then
+	adb reboot bootloader
+	sudo fastboot flash recovery $COMPILED/recovery.img
+fi
