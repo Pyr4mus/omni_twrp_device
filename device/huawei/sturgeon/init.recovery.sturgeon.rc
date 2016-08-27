@@ -5,6 +5,15 @@ on early-init
 on init
 	chown root system /sbin
 	chmod 0755 /sbin
+	
+	chown root system /tmp
+	chmod 0755 /tmp
+	
+	chown root system /dev
+	chmod 0755 /dev
+
+	chown root system /etc
+	chmod 0755 /etc	
 
 on post-fs-data
     write /sys/devices/system/cpu/cpu1/online 1
