@@ -19,7 +19,7 @@
 		<variable name="screen_height" value="320"/>
 		<variable name="background_color" value="#000000"/>
 		<variable name="header_color" value="#000000"/>
-		<variable name="accent_color" value="#4EA9D0"/>
+		<variable name="accent_color" value="#64BAE8"/>
 	</variables>
 
 	<pages>
