@@ -91,7 +91,7 @@
 			<sort name="tw_gui_sort_order"/>
 			<icon folder="folder" file="file"/>
 			<background color="%background_color%"/>
-			<font resource="font_m" spacing="%fileselector_spacing%" color="%text_color%" highlightcolor="%accent_color%"/>
+			<font resource="font_l" spacing="%fileselector_spacing%" color="%text_color%" highlightcolor="%accent_color%"/>
 		</style>
 
 		<style name="listbox">

@@ -154,7 +154,7 @@
 		<variable name="fileselector_linecolor" value="#555555"/>
 		<variable name="fileselector_highlight_color" value="#555555"/>
 		<variable name="fileselector_separatorheight" value="1"/>
-		<variable name="fileselector_spacing" value="0"/>
+		<variable name="fileselector_spacing" value="10"/>
 		<variable name="fileselector_install_height" value="248"/>
 		<variable name="fileselector_filemanager_height" value="248"/>
 		<variable name="partitionlist_spacing" value="0"/>
@@ -168,8 +168,8 @@
 		<variable name="fastscroll_recth" value="18"/>
 		<variable name="slidervalue_lineh" value="4"/>
 		<variable name="slidervalue_padding" value="0"/>
-		<variable name="slidervalue_sliderw" value="70"/>
-		<variable name="slidervalue_sliderh" value="72"/>
+		<variable name="slidervalue_sliderw" value="60"/>
+		<variable name="slidervalue_sliderh" value="60"/>
 		<variable name="slideout_height" value="232"/>
 		<variable name="slideout_bg_height" value="248"/>
 		<variable name="input_height" value="16"/>
