@@ -175,7 +175,7 @@
 		<variable name="input_height" value="16"/>
 		<variable name="input_line_width" value="1"/>
 		<variable name="input_line_console" value="272"/>
-		<variable name="console_height" value="195"/>
+		<variable name="console_height" value="185"/>
 		<variable name="console_terminal_s_height" value="100"/>
 		<variable name="console_terminal_l_height" value="268"/>
 		<variable name="close_btn_x" value="280"/>
@@ -305,7 +305,7 @@
 			</fill>
 
 			<fill color="%accent_color%">
-				<placement x="%indent%" y="228" w="%content_width%" h="input_line_width"/>
+				<placement x="%indent%" y="218" w="%content_width%" h="input_line_width"/>
 			</fill>
 		</template>
 
